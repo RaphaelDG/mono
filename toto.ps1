@@ -1,4 +1,4 @@
-function Invoke-Nightmare
+function Invoke-Toto
 {
 
 
@@ -717,4 +717,4 @@ New-Struct. :P
     $StructBuilder.CreateType()
 }
 
-Invoke-Nightmare
+Invoke-Toto
